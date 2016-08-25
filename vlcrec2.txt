@@ -1,0 +1,5 @@
+c:
+pause
+cd "C:\Program Files\VideoLAN\VLC\"
+pause
+vlc.exe vlc dshow:// :dshow-vdev="Microsoft LifeCam Cinema" :sout={dst='transcode{vcodec=fmp4,vb=1024,fps=20,scale=1}}

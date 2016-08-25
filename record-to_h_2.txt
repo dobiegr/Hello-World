@@ -1,0 +1,6 @@
+“C:\Program Files\VideoLAN\VLC\vlc.exe” “Microsoft LifeCam Cinema” –sout=”#transcode{vcodec=h264,noaudio,fps=15,width=640}:standard{access=file,mux=mp4,dst=”C:\video_recordings\temp.mp4?}” –stop-time=15 vlc://quit
+
+vlc.exe dshow://“Microsoft LifeCam Cinema” -sout=”#transcode{vcodec=h264,noaudio,fps=15,width=640}:standard{access=file,mux=mp4,dst=”C:\video_recordings\temp.mp4?}” –stop-time=15 vlc://quit
+
+
+vlc.exe dshow://“Microsoft LifeCam Cinema” -sout=#transcode{vcodec=mp2v,vb=1024,fps=30,width=320,acodec=mp2a,ab=128,scale=1,channels=2,deinterlace,audio-sync}: -vvv
